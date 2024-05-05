@@ -1,0 +1,6 @@
+**/node_modules/
+/mini-projects/
+/tailwind-course-projects-main/
+/tailwind-sandbox-starter/
+/simple-tailwind-starter/
+**/package-lock.json/
