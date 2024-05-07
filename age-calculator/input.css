@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.error {
+  @apply border border-lightRed text-lightRed;
+}
+
+.error-message {
+  @apply text-red-500 font-light text-xs;
+}
+
+.error-label {
+  @apply text-red-500;
+}

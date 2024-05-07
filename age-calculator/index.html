@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="./script.js" defer></script>
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Global Container -->
+
+    <div class="min-h-screen flex items-center justify-center">
+      <!-- Card -->
+
+      <div
+        class="max-w-full md:max-w-3xl bg-white shadow-lg rounded-xl p-8 overflow-hidden rounded-br-[10rem]"
+      >
+        <!-- inner container -->
+        <div class="min-w-2xl md:min-w-4xl mb-20">
+          <!-- Form -->
+          <div
+            class="flex space-x-8 items-center justify-between mt-2 mb-10 text-slate-900"
+          >
+            <div class="text-gray-400 font-bold flex gap-1 flex-col text-xl">
+              <label for="date">Date</label>
+              <input
+                type="number"
+                id="date"
+                max="31"
+                min="1"
+                class="appearance-none border px-8 py-2 rounded focus:outline-none focus:ring-2 ring-purple font-bold text-center text-2xl text-slate-800"
+              />
+            </div>
+            <div class="text-gray-400 font-bold flex gap-1 flex-col text-xl">
+              <label for="date">Month</label>
+              <input
+                type="number"
+                id="month"
+                max="12"
+                min="1"
+                class="appearance-none border px-3 py-2 rounded focus:outline-none focus:ring-2 ring-purple font-bold text-center text-2xl text-slate-800"
+              />
+            </div>
+            <div class="text-gray-400 font-bold flex gap-1 flex-col text-xl">
+              <label for="year">Year</label>
+              <input
+                type="number"
+                id="year"
+                max="2024"
+                min="1970"
+                class="appearance-none border px-3 py-2 rounded focus:outline-none focus:ring-2 ring-purple font-bold text-center text-2xl text-slate-800"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Separator -->
+        <div class="flex items-center relative mt-8 mb-12">
+          <!-- Border -->
+          <div class="h-[2px] bg-gray-300 w-full"></div>
+          <button
+            id="submit"
+            class="absolute right-1/2 translate-x-1/2 md:right-[2.5rem] duration-300"
+          >
+            <img
+              src="./assets/images/icon-arrow.svg"
+              alt="arrow"
+              class="w-20 h-20 bg-purple rounded-full p-6"
+            />
+          </button>
+        </div>
+
+        <!-- Result display. -->
+
+        <div class="mt-6 p-8 space-y-4">
+          <!-- Year display -->
+          <div class="flex gap-4 items-center">
+            <h2
+              id="month-disp"
+              class="text-6xl font-extrabold italic text-purple"
+            >
+              __
+            </h2>
+            <h2 class="text-5xl font-extrabold italic text-slate-900">years</h2>
+          </div>
+          <!-- Days -->
+          <div class="flex gap-4 items-center">
+            <h2
+              id="day-disp"
+              class="text-6xl font-extrabold italic text-purple"
+            >
+              __
+            </h2>
+            <h2 class="text-5xl font-extrabold italic text-slate-900">days</h2>
+          </div>
+          <!-- Month display -->
+          <div class="flex gap-4 items-center">
+            <h2
+              id="month-disp"
+              class="text-6xl font-extrabold italic text-purple"
+            >
+              __
+            </h2>
+            <h2 class="text-5xl font-extrabold italic text-slate-900">month</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Siddharth Malviya</a>.
+    </div>
+  </body>
+</html>
